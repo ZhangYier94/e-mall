@@ -1,0 +1,16 @@
+.address{
+  float: left;
+  background: #479de6;
+  font-size: 60%;
+  color: white;
+  padding: 0 5px 5px 5px;
+  display: flex;
+}
+.flex-wrp {display: flex;}
+.nav{
+  margin-top: 50px;
+  text-align: left;
+}
+.nav-item{
+  width: 100px;
+}

@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="address">
+    <picker 
+    mode="selector"
+    range="{{address}}"
+    bindchange='bindPikerChange'
+    value='{{addressIndex}}'
+    >
+    <view class="flex-wrp">
+    <view>{{address[addressIndex]}}</view>
+    <view><image style='height:16px;width:16px' src='{{addressDown}}' /></view>
+    </view>
+    </picker>
+  </view>
+   <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+    <view wx:for="{{shopNav}}" class='nav-item'>{{item}}</view>
+  </view>
+</view>

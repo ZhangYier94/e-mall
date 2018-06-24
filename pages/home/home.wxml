@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="address">
+    <picker 
+    mode="selector"
+    range="{{address}}"
+    bindchange='bindPikerChange'
+    value='{{addressIndex}}'
+    >
+    <view class="picker">
+      选择地址：{{address[addressIndex]}}
+    </view>
+    </picker>
+  </view>
+  <view class="goToShop">
+    <button class='skip' bindtap='goToShop'>点击进入买东西</button>
+  </view>
+</view>
